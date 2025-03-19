@@ -12,7 +12,7 @@ function Loader() {
         <div className="logo">
         <img
                         alt=""
-                        src="https://https://postimg.cc/CdP76TQ4"
+                        src="https://postimg.cc/CdP76TQ4"
                         className="h-40 w-auto"
                       />
         </div>
