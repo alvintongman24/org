@@ -44,7 +44,7 @@ function Navbar() {
                     <div className="">
                       <img
                         alt="Your Company"
-                        src="https://postimg.cc/5jNp3Nn0"
+                        src="public\orgymeet-logo-2.png"
                         className="h-50 w-auto"
                       />
                     </div>
