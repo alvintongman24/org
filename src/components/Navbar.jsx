@@ -10,10 +10,10 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 function Navbar() {
 
     const navigation = [
-        { name: 'Home', icon:"fa-solid fa-house", href: '#', current: true }, 
-        { name: 'Orgy World', icon:"fa-solid fa-earth-oceania", href: '#', current: false },
+        { name: 'Home', icon:"fa-solid fa-house", href: '#', current: true,className:"bg-green-200" }, 
+        { name: 'Orgy World', icon:"fa-solid fa-earth-oceania", href: '#', current: false , },
         { name: 'Search', icon:"fa-solid fa-magnifying-glass", href: '#', current: false },
-        { name: 'MENU', icon:"fa-solid fa-bars", href: '#', current: false },
+       
       ]
 
       function classNames(...classes) {
@@ -26,9 +26,9 @@ function Navbar() {
 
     return(
 
-        <section className="px-100px ">
+        <section className="">
 
-            <Disclosure as="nav" className="bg-black fixed top-0 left-0 w-full z-50 animate-slideDown">
+            <Disclosure as="nav" className="bg-black fixed top-0 left-0 w-full z-50 animate-slideDown py-8 shadow-2xl  ">
               <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                   <div className="absolute inset-y-0 left-0 flex items-center sm:hidden  ">
@@ -41,23 +41,23 @@ function Navbar() {
                     </DisclosureButton>
                   </div>
                   <div className="flex flex-1 items-center justify-center md:justify-around sm:items-stretch sm:justify-start">
-                    <div className="flex shrink-0 items-center">
+                    <div className="">
                       <img
                         alt="Your Company"
-                        src="https://theradishingreview.com/wp-content/uploads/2020/03/OnlineDatingRR.jpg"
-                        className="h-8 w-auto"
+                        src="public\orgymeet-logo-2.png"
+                        className="h-50 w-auto"
                       />
                     </div>
-                    <div className="hidden sm:ml-6 sm:block">
-                      <div className="flex space-x-10">
+                    <div className="hidden sm:ml-6 sm:block ">
+                      <div className="flex space-x-10 p-20">
                         {navigation.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
                             aria-current={item.current ? 'page' : undefined}
                             className={classNames(
-                              item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                              'rounded-md px-3 py-2 text-sm font-medium',
+                              item.current ? 'bg-[#90EE98] text-black' : 'text-gray-300 hover:bg-[#90EE98] hover:text-black',
+                              'rounded-md px-3 py-2 text-xl semi-bold md:py-3 px-1 ',
                             )}
                           >
                              <i class={item.icon}></i>
@@ -70,7 +70,7 @@ function Navbar() {
                   <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <button
                       type="button"
-                      className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
+                      className="relative rounded-full bg-[#90EE98] p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
                     >
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">View notifications</span>

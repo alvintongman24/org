@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './index.css'; 
 import Navbar from './components/Navbar';
-import Home from './components/Home';
 import Home2 from './components/Home2';
+import Home from './components/Home';
 
 function Loader() {
   return (
@@ -12,8 +12,8 @@ function Loader() {
         <div className="logo">
         <img
                         alt="Your Company"
-                        src="https://theradishingreview.com/wp-content/uploads/2020/03/OnlineDatingRR.jpg"
-                        className="h-8 w-auto"
+                        src="public\orgymeet-main-2.png"
+                        className="h-40 w-auto"
                       />
         </div>
       </div>
@@ -37,19 +37,19 @@ function App() {
   }, []);
 
   return (
-    <div className="App ">
+    <div className="App">
      
 
       {loading ? (
         <Loader />
       ) : (
-        <section className='bg-black m-0 '>
-          <Navbar />
-          <Home/>
-          <Home2/>
-          
-
+        <section>
+        <Navbar />
+        <section className="back py-34 flex justify-center ">
+        <Home/>
         </section>
+        <Home2 />
+      </section>
       )}
     
     </div>
