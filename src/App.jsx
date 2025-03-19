@@ -11,7 +11,7 @@ function Loader() {
       <div className="box">
         <div className="logo">
         <img
-                        alt="Your Company"
+                        alt=""
                         src="public\orgymeet-main-2.png"
                         className="h-40 w-auto"
                       />
