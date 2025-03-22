@@ -9,7 +9,7 @@ function Home() {
             
          <section class=" card flex flex-col">
            <div className="z-10">
-              <div className='text-white block text-lg  md:text-7xl max-w-120 md:max-w-280 italic tracking-wide'>
+              <div className='text-white block text-3xl  md:text-7xl max-w-120 md:max-w-280 italic tracking-wide'>
                     <h1>
                    <span  className='text-[#90EE98]'>Orgymeet</span> is the Most Popular Social Network for your Orgy, Fetish & Kinky Community.
                     </h1>
